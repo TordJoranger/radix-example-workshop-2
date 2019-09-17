@@ -7,6 +7,10 @@ spec:
     - name: development
       build:
         from: master
+    - name: qa
+      build:
+        from: release/*
+    - name: prod
   components:
     - name: www
       src: ./www
